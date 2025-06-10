@@ -87,33 +87,33 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Email sending function
-function sendEmail(event) {
-    event.preventDefault();
+// function sendEmail(event) {
+//     event.preventDefault();
     
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
+//     const name = document.getElementById('name').value;
+//     const email = document.getElementById('email').value;
+//     const subject = document.getElementById('subject').value;
+//     const message = document.getElementById('message').value;
     
     // Create mailto link
-    const mailtoLink = `mailto:arundhathibala27@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+    // const mailtoLink = `mailto:arundhathibala27@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
     
     // Open email client
-    window.location.href = mailtoLink;
+    // window.location.href = mailtoLink;
     
-    // Show success message
-    alert('Email client opened! Please send the email from your email application.');
+//     // Show success message
+//     alert('Email client opened! Please send the email from your email application.');
     
-    // Reset form
-    document.getElementById('contactForm').reset();
+//     // Reset form
+//     document.getElementById('contactForm').reset();
     
-    return false;
-}
+//     return false;
+// }
 
 // Form submission handling
-document.addEventListener('DOMContentLoaded', () => {
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', sendEmail);
-    }
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//     const contactForm = document.querySelector('.contact-form');
+//     if (contactForm) {
+// contactForm.addEventListener('submit', sendEmail);
+//     }
+// });
